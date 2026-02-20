@@ -1,0 +1,66 @@
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  color: #1f2937;
+}
+
+.positions-grid {
+  display: grid;
+  
+  gap: 1rem;
+}
+
+.position-card,
+.position-card input {
+  box-sizing: border-box; 
+}
+
+.position-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.position-card h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+.position-card input {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.position-card input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.position-card button {
+  align-self: flex-start;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.position-card button:hover {
+  background: #1f2937;
+}
