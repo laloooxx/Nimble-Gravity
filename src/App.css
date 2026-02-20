@@ -1,5 +1,5 @@
 #root {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
@@ -10,7 +10,7 @@ h1 {
 
 .positions-grid {
   display: grid;
-  
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
   gap: 1rem;
 }
 
@@ -23,7 +23,7 @@ h1 {
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
-  padding: 1rem;
+  padding: 1.25rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
@@ -59,8 +59,9 @@ h1 {
   color: #ffffff;
   font-weight: 600;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
 
 .position-card button:hover {
-  background: #1f2937;
+  background: #374151;
 }
